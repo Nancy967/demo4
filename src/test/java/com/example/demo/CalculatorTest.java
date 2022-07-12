@@ -1,11 +1,14 @@
 package com.example.demo;
 
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorTest {
 
+    @Disabled
     @Test
     public void add(){
         Calculator calculator = new Calculator();
@@ -16,6 +19,7 @@ public class CalculatorTest {
         assertTrue(result > 1);
     }
 
+    @DisplayName("除法")
     @Test
     public void divide(){
         Calculator calculator = new Calculator();
